@@ -48,20 +48,12 @@ ScrollView scrollView;
 PieChart pieChart;
 SwipeRefreshLayout swipeRefreshLayout;
 
-
-
-
-
-
-    @Override
+@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         checkConnection();
-
         tvCases = findViewById(R.id.tvCases);
         tvRecovered = findViewById(R.id.tvRecovered);
         tvCritical = findViewById(R.id.tvCritical);
@@ -70,9 +62,7 @@ SwipeRefreshLayout swipeRefreshLayout;
         tvTotalDeaths = findViewById(R.id.tvtotaldeaths);
         tvTodayDeaths = findViewById(R.id.tvtdeaths);
         tvAffectiveCountries = findViewById(R.id.tvafcountries);
-
         swipeRefreshLayout = findViewById(R.id.swipe);
-
         simpleArcLoader = findViewById(R.id.loader);
         scrollView = findViewById(R.id.scrollbarStats);
         pieChart = findViewById(R.id.piechart);
